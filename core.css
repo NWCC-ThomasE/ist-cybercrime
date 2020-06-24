@@ -7,47 +7,214 @@ body {
   margin: 0;
 }
 
-/* NAVBAR */
-.navbar {
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    margin: 0;
+    position: static !important;
+    top: 0;
+    left: 0;
+  }
+  
+  header ul {
+    max-height: 100% !important;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  header li {
+    float: left;
+    font-size: 24px;
+  }
+  
+  header li.title {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  
+  header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: "MuseoModerno", cursive;
+    text-decoration: none;
+    margin: 10px;
+    padding: 0px;
+  }
+  
+  header li:not(.title) a {
+    transition-property: background-color, border-radius, margin, padding;
+    transition-duration: 0.5s;
+    
+    background-color: rgba(0,0,0,0);
+    border-radius: 0px;
+  }
+  
+  header li:not(.title) a:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    margin: 0px;
+    padding: 10px;
+  }
+  
+  header li:not(.title):not(.navitem) {
+    margin: 5px;
+  }
+  
+  header .navbutton {
+    float: right;
+    padding-right: 10px;
+    display: block !important;
+  }
+  
+  header .navitem {
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    width: 100%;
+  }
+  
+  header .visible {
+    display: inline-block !important;
+  }
+  
+  main div {
+    margin: 10px 50px;
+  }
+  
+  main h1, h3 {
+    text-align: center;
+    font-family: "MuseoModerno";
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  main h1 {
+    margin-top: 20px;
+    font-size: 30px !important;
+  }
+  
+  main h3 {
+    font-size: 24px !important;
+  }
+  
+  main p {
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: justify
+  }
+}
+
+@media (min-width: 800px) {
+  header .navitem {
+    display: inline-block !important;
+  }
+}
+
+header {
+  margin: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+  
+header ul {
+  max-height: 85px;
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  display: block;
-  text-decoration: none;
-  list-style: none;
-  font-family: "MuseoModerno", cursive;
-  background-color: rgba(0,0,0,0.50);
-  color: white;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-
-.navbar > li {
-  display: inline-block;
-  font-size: 24px;
-  vertical-align: middle;
-}
-
-.navbar li a {
-  display: block;
-  transition: border-radius 0.5s, background-color 0.5s, padding 0.5s, margin 0.5s;
-  margin: 10px;
   
-  border-radius: 0px;
-  background-color: rgba(0,0,0,0.00);
+header li {
+  float: left;
+  font-size: 24px;
+}
+  
+header li.title {
+  font-size: 30px;
+  padding-left: 10px;
+}
+  
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: "MuseoModerno", cursive;
+  text-decoration: none;
+  margin: 10px;
   padding: 0px;
 }
-
-.navbar > li:not(.title) a:hover {
-  border-radius: 100px;
-  background-color: rgba(0,0,0,0.50);
+  
+header li:not(.title) a {
+  transition-property: background-color, border-radius, margin, padding;
+  transition-duration: 0.5s;
+    
+  background-color: rgba(0,0,0,0);
+  border-radius: 0px;
+}
+  
+header li:not(.title) a:hover {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;
+  margin: 0px;
   padding: 10px;
 }
-
-.navbar > .title {
-  font-size: 30px;
-  margin: 20px;
+  
+header li:not(.title):not(.navitem) {
+  margin: 5px;
 }
-
-.navbar .right {
-  margin: 10px;
-  vertical-align: middle;
+  
+header .navbutton {
+  float: right;  
+  padding-right: 10px;
+  display: none;
+}
+  
+header .navitem {
+  margin: 0px;
+  padding: 5px;
+  display: inline-block;
+}
+  
+header .resources {
   float: right;
 }
+
+header .visible {
+  display: inline-block !important;
+}
+
+main div {
+    margin: 10px 20%;
+  }
+  
+  main h1, h3 {
+    text-align: center;
+    font-family: "MuseoModerno";
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  main h1 {
+    margin-top: 20px;
+    font-size: 46px;
+  }
+  
+  main h3 {
+    font-size: 30px;
+  }
+  
+  main p {
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: justify
+  }
