@@ -104,7 +104,7 @@ body {
   }
   
   main p {
-    font-size: 16px;
+    font-size: 12px !important;
     font-family: sans-serif;
     text-align: justify
   }
@@ -132,6 +132,7 @@ header ul {
   background-color: rgba(0,0,0,0.5);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  z-index: -1;
 }
   
 header li {
@@ -193,28 +194,45 @@ header .visible {
   display: inline-block !important;
 }
 
+main {
+  margin-top: 0px;
+  box-shadow: 0px 20px 50px rgba(0,0,0,1);
+  margin: 0px 20%;
+  padding-bottom: 50px;
+  z-index: -1;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
 main div {
-    margin: 10px 20%;
-  }
+  margin: 0px 0 10px 0;
+  padding: 0px 20%;
+}
   
-  main h1, h3 {
-    text-align: center;
-    font-family: "MuseoModerno";
-    font-weight: bold;
-    margin: 0;
-  }
+main h1, h3 {
+  text-align: center;
+  font-family: "MuseoModerno";
+  font-weight: bold;
+  margin: 0;
+}
   
-  main h1 {
-    margin-top: 20px;
-    font-size: 46px;
-  }
+main h1 {
+  font-size: 46px;
+}
   
-  main h3 {
-    font-size: 30px;
-  }
+main h3 {
+  font-size: 30px;
+}
   
-  main p {
-    font-size: 16px;
-    font-family: sans-serif;
-    text-align: justify
-  }
+main p {
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: justify
+}
+
+horizline {
+  display: block;
+  width: 80%;
+  margin: auto;
+  border: 5px dashed lightgrey;
+}
