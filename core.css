@@ -106,7 +106,7 @@ body {
   main p {
     font-size: 12px !important;
     font-family: sans-serif;
-    text-align: justify
+    text-align: justify;
   }
 }
 
@@ -197,7 +197,7 @@ header .visible {
 main {
   margin-top: 0px;
   box-shadow: 0px 20px 50px rgba(0,0,0,1);
-  margin: 0px 20%;
+  margin: 0px 5%;
   padding-bottom: 50px;
   z-index: -1;
   border-bottom-left-radius: 100px;
