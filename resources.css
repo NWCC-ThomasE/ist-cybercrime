@@ -8,7 +8,7 @@
 }
 
 .resources-box a {
-  flex: 20%;
+  flex: auto;
   font-size: 18px;
   font-family: sans-serif;
   text-decoration: none;
