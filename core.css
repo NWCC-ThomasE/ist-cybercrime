@@ -144,9 +144,15 @@ header ul {
   
 header li {
   float: left;
+  text-align: center;
   font-size: 24px;
 }
-  
+
+header li img {
+  width: 50px;
+  display: block;
+}
+
 header li.title {
   font-size: 30px;
   padding-left: 10px;
